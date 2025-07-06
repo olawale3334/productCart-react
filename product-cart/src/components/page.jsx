@@ -1,5 +1,4 @@
-import waffle from '/image-waffle-desktop.jpg'
-import mobilewaffle from '/image-waffle-mobile.jpg'
+import empty from '/illustration-empty-cart.svg'
 import cartimage from '/icon-add-to-cart.svg'
 function Card({product}) {
     console.log(product);
@@ -50,8 +49,10 @@ function Card({product}) {
           <p className="text-orange-700 font-semibold mx-5 text-2xl mt-5">
             Your Cart (<span className="addToCart">0</span>)
           </p>
-          <div className="cart-display cart-items-js mx-5 mt-3" />
-          <div className="empty-cart-text text-center mt-40 px-4">
+            <div className="flex justify-center">
+                <img src={empty} alt="" />
+             </div>
+          <div className="empty-cart-text text-center px-4">
             <p className="text-orange-700">Your added items will be here</p>
           </div>
         </div>
@@ -61,13 +62,15 @@ function Card({product}) {
       <div className="px-4 md:hidden mt-10">
         <div
           id="cart-mobile"
-          className="bg-white rounded-lg shadow-xl py-5 shrink-0 overflow-auto"
+          className="bg-white w-[549x] rounded-lg shadow-xl py-5 shrink-0 overflow-auto"
         >
           <p className="text-orange-700 font-semibold mx-5 text-2xl mt-5">
             Your Cart (<span className="addToCart-mobile">0</span>)
           </p>
-          <div className="cart-display mx-5 mt-3" />
-          <div className="empty-cart-text text-center mt-40 px-4">
+            <div className="flex justify-center">
+                <img src={empty} alt="" />
+             </div>
+          <div className="empty-cart-text text-center  px-4">
             <p className="text-orange-700">Your added items will be here</p>
           </div>
         </div>
