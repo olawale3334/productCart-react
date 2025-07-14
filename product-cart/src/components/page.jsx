@@ -192,10 +192,10 @@ function Card({product}) {
               
             )   : (
                 
-           <div>
-                {cart.map((item)=>(
-                  <div className='mx-4 mb-3'>
-                     <p>{item.desc}</p>
+           <div className='mx-4'>
+                 {cart.map((item)=>
+                  <div>
+                     <p className='mt-3'>{item.desc}</p>
                 <div className="flex justify-between mt-2">
                   <div className="flex gap-3">
                     <span className="text-orange-700">{item.qunatity}x</span>
@@ -206,11 +206,29 @@ function Card({product}) {
                     <img src={remove} alt="" />
                   </div>
                 </div>
-                <hr className='mt-5 ' />
-                 
+                <hr className='mt-3' />
                   </div>
-                ))}
-                    { cart.length > 0 && ( <p>Total order:</p>) } 
+                )}
+                <div className='mt-5'>
+                   { cart.length > 0 && ( <div>
+                     <div className='flex justify-between'>
+                     <p>Total order:</p>
+                     <p><b>${(totalAmount / 100).toFixed(2)}</b></p>
+                   </div>
+                     <div className='bg-pink-50 rounded-md mx-4  py-2 mt-4'>
+                         <div className='flex justify-center  gap-2 items-center text-xs '>
+                          <img className='w-5' src={carbon} alt="" />
+                          <p>this is a <b>carbon-neutral</b> delivery</p>
+                         </div>
+                     </div>
+                      <div className=' mx-4 mt-5'>
+                        <button  className="  w-full  bg-[#ff8000] hover:bg-[#46280a] text-white py-2 rounded-xl">
+                            Confirm Order
+                         </button>
+                      </div>
+                    </div>
+                         ) }
+                </div>
            </div>
               
           )}
