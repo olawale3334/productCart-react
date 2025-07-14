@@ -29,12 +29,14 @@ function App() {
   console.log();
   
   const product = [{
+     id:1,
     desktopimg:mobilewaffle,
     mobileimg: waffle,
      name:"waffle",
      desc:"affle with berries",
      price:650
   },{
+      id:2,
     desktopimg:mobilebaklava,
     mobileimg:baklava,
      name:" Baklava",
@@ -42,12 +44,14 @@ function App() {
      price:400
      
 },{
+      id:3,
     desktopimg:mobilemeringue,
     mobileimg:meringue,
      name:"pie",
      desc:"lemon Meringue pie",
      price:500
 },{
+      id:4,
       desktopimg:mobilepanna,
       mobileimg:panna,
      name:"Panna Cotta",
@@ -55,30 +59,35 @@ function App() {
      price:650
 },
 { 
+      id:5,
      desktopimg: brownie2,
      mobileimg: brownie,
      name:"Brownie",
      desc:"Salted Caramel Brownie",
      price:550  
 },{
+      id:6,
      desktopimg:mobilecake,
      mobileimg:cake,
      name:"Cake",
      desc:"Red Velvet Cake",
      price:450 
 },{
+      id:7,
     desktopimg:mobilebrulee,
     mobileimg:brulee,
      name:" Creme Brulee",
      desc:"Vanilla Bean Creme Brulee",
      price:700
 },{
+      id:8,
     desktopimg:mobiletiramisu,
     mobileimg:tiramisu,
      name:" Tiramisu",
      desc:"Classic Tiramisu",
      price:550
 },{
+      id:9,
     desktopimg:mobilemacaron,
     mobileimg:macaron,
      name:" Macaron",
